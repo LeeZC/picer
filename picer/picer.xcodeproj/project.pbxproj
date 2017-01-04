@@ -15,6 +15,7 @@
 		239A1F511E1D320E00399639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239A1F4F1E1D320E00399639 /* LaunchScreen.storyboard */; };
 		239A1F5C1E1D320E00399639 /* picerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 239A1F5B1E1D320E00399639 /* picerTests.m */; };
 		239A1F671E1D320E00399639 /* picerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 239A1F661E1D320E00399639 /* picerUITests.m */; };
+		2CA05AADD6D99ED2367AC390 /* libPods-picer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF5D9584F3525689E99E759 /* libPods-picer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		239A1F621E1D320E00399639 /* picerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = picerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		239A1F661E1D320E00399639 /* picerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = picerUITests.m; sourceTree = "<group>"; };
 		239A1F681E1D320E00399639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75D0E9CD206DA48D50A6D94A /* Pods-picer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-picer.release.xcconfig"; path = "Pods/Target Support Files/Pods-picer/Pods-picer.release.xcconfig"; sourceTree = "<group>"; };
+		7BF5D9584F3525689E99E759 /* libPods-picer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-picer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C910A6B6128756D38B6B7290 /* Pods-picer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-picer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-picer/Pods-picer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA05AADD6D99ED2367AC390 /* libPods-picer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				239A1F5A1E1D320E00399639 /* picerTests */,
 				239A1F651E1D320E00399639 /* picerUITests */,
 				239A1F3F1E1D320E00399639 /* Products */,
+				7B20E74D8908244371F11527 /* Pods */,
+				722D695F321992EAFC034E98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,23 @@
 			path = picerUITests;
 			sourceTree = "<group>";
 		};
+		722D695F321992EAFC034E98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BF5D9584F3525689E99E759 /* libPods-picer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B20E74D8908244371F11527 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C910A6B6128756D38B6B7290 /* Pods-picer.debug.xcconfig */,
+				75D0E9CD206DA48D50A6D94A /* Pods-picer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 239A1F6B1E1D320E00399639 /* Build configuration list for PBXNativeTarget "picer" */;
 			buildPhases = (
+				D111FB3D0B582B73A28BB432 /* [CP] Check Pods Manifest.lock */,
 				239A1F3A1E1D320E00399639 /* Sources */,
 				239A1F3B1E1D320E00399639 /* Frameworks */,
 				239A1F3C1E1D320E00399639 /* Resources */,
+				78C58622792CFD82A9779F8F /* [CP] Embed Pods Frameworks */,
+				B9CB0F6707DDC5260237F468 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78C58622792CFD82A9779F8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-picer/Pods-picer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9CB0F6707DDC5260237F468 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-picer/Pods-picer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D111FB3D0B582B73A28BB432 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		239A1F3A1E1D320E00399639 /* Sources */ = {
@@ -422,6 +497,7 @@
 		};
 		239A1F6C1E1D320E00399639 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C910A6B6128756D38B6B7290 /* Pods-picer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = picer/Info.plist;
@@ -433,6 +509,7 @@
 		};
 		239A1F6D1E1D320E00399639 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D0E9CD206DA48D50A6D94A /* Pods-picer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = picer/Info.plist;
